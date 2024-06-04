@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -467,4 +467,430 @@ footer .copyright{
 }
 footer{
     background-color: gainsboro;
+} */
+
+
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h4, h6, p, button {
+    margin-bottom: 1rem;
+}
+
+/* Header Styles */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: orangered;
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: black;
+}
+
+#header img {
+    width: 120px;
+}
+
+/* Hero Section */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://source.unsplash.com/random/1920x1080");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 200px 50px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#hero h4 {
+    color: lightgreen;
+}
+
+#hero h1 {
+    color: maroon;
+}
+
+#hero p {
+    color: gray;
+}
+
+#hero button {
+    width: 180px;
+    margin: 20px 0;
+    border: 3px solid;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#hero button:hover {
+    font-size: 1.25rem;
+    color: orangered;
+    cursor: pointer;
+}
+
+/* Features Section */
+.section-p1 {
+    padding: 60px 30px;
+    background-color: white;
+}
+
+#feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#feature .fe-box {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid orangered;
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 0 8px 16px rgba(205, 0, 0, 0.3);
+}
+
+#feature .fe-box img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: coral;
+    color: maroon;
+    margin-top: 10px;
+}
+
+/* Products Section */
+#product1 {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#product1 h2 {
+    color: maroon;
+    font-family: 'Cursive', cursive;
+    font-style: italic;
+    text-shadow: 5px 5px 10px rgba(255, 0, 0, 0.2);
+}
+
+#product1 p {
+    color: orangered;
+    font-style: italic;
+}
+
+#product1 .pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 200px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    transition: 0.3s;
+}
+
+#product1 .pro:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#product1 .pro img {
+    width: 100%;
+    height: 250px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#product1 .pro .des {
+    text-align: left;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: dimgrey;
+    font-size: 1rem;
+}
+
+#product1 .pro .des h5 {
+    color: darkblue;
+    padding: 5px 0;
+}
+
+#product1 .pro .des i {
+    color: orange;
+    padding: 5px 0;
+}
+
+#product1 .pro .des h4 {
+    color: darkgreen;
+    font-size: 1.5rem;
+}
+
+#product1 .pro #new {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    color: darkgreen;
+    border: 1px solid green;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Banner Section */
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("https://source.unsplash.com/random/1920x600");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+#banner h2 span {
+    color: dodgerblue;
+}
+
+button.normal {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#banner button:hover {
+    background: darkcyan;
+    color: white;
+}
+
+/* Small Banner Section */
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("https://source.unsplash.com/random/580x600");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin: 20px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("https://source.unsplash.com/random/580x600?2");
+}
+
+#sm-banner h4 {
+    font-size: 1.25rem;
+}
+
+#sm-banner h2 {
+    font-size: 2rem;
+    color: orangered;
+}
+
+#sm-banner span {
+    color: darkblue;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+/* Newsletter Section */
+#Newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("https://source.unsplash.com/random/1920x400");
+    background-repeat: no-repeat;
+    height: 150px;
+    background-position: 20% 30%;
+    background-size: cover;
+    padding: 20px 30px;
+    margin: 20px 0;
+}
+
+#Newsletter h4 {
+    font-size: 1.25rem;
+    color: white;
+}
+
+#Newsletter p {
+    font-size: 1rem;
+    color: lightblue;
+}
+
+#Newsletter p span {
+    color: goldenrod;
+}
+
+#Newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#Newsletter input {
+    height: 55px;
+    padding: 0 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#Newsletter button {
+    font-size: 1rem;
+    background-color: darkcyan;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    height: 55px;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 40px 80px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo img {
+    width: 120px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: dimgray;
+}
+
+footer h4 {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: dimgrey;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: darkblue;
+}
+
+footer .follow {
+    margin-top: 10px;
+}
+
+footer .follow i {
+    color: darkgreen;
+    cursor: pointer;
+    padding: 2px 4px;
+}
+
+footer .follow i:hover {
+    color: darkcyan;
+}
+
+footer .install img {
+    margin: 10px 2px;
+    width: 60px;
+    height: 50px;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: darkgray;
 }
